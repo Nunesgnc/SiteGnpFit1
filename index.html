@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="cadastro.css">
+  <title>Sua Página</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo_caixa">
+      <img src="C:\Users\23162238\Desktop\Nova pasta\v4Company-main\gnpfit.main\logognp.png" title="GNP logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planos.html">Produto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+
+    <div class="titulo-separador">
+      <h2>Tabela de Exemplos</h2>
+      <hr>
+    </div>
+
+    <table class="excel-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Valor</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="cliente">
+          <td class="nome">Guilherme</td>
+          <td class="produto">Creatina</td>
+          <td class="qtde">2</td>
+          <td class="valorUnitario">90</td>
+          <td class="valorTotal">-</td>
+        </tr>
+        <tr class="cliente">
+          <td class="nome">Edson</td>
+          <td class="produto">Whey Protein</td>
+          <td class="qtde">3</td>
+          <td class="valorUnitario">18</td>
+          <td class="valorTotal">-</td>
+        </tr>
+        <tr class="cliente">
+          <td class="nome">Otavio</td>
+          <td class="produto">BCA</td>
+          <td class="qtde">4</td>
+          <td class="valorUnitario">10</td>
+          <td class="valorTotal">-</td>
+        </tr>
+        <tr class="cliente">
+          <td class="nome">Gustavo</td>
+          <td class="produto">Beta Alanina</td>
+          <td class="qtde">5</td>
+          <td class="valorUnitario">30</td>
+          <td class="valorTotal">-</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+
+    <section class="container_title">
+      <h1>Adicionar nova encomenda</h1>
+    </section>
+    <hr>
+    <section class="container_form">
+      <form action="">
+
+
+        <label for="nome_input" name="nome_label" id="nome_label">Nome:</label>
+        <input type="text" id="nome_input" name="nome_input" placeholder="Digite o nome do(a) cliente">
+
+
+        <label for="qtde_input" id="qtde_label" name="qtde_label">Qtde:</label>
+        <input type="number" id="qtde_input" name="qtde_input" placeholder="Digite a quantidade encomendada">
+
+
+        <label for="produto_select" id="produto_label" name="produto_label">Produto:</label>
+        <select name="produto_select" id="produto_select">
+          <option value="Produto 1">Creatina</option>
+          <option value="Produto 2">Whey Protein</option>
+          <option value="Produto 3">BCA</option>
+          <option value="Produto 3">Beta Alanina</option>
+        </select>
+
+        <label for="valorUnitario_input" id="valorUnitario_label" name="valorUnitario_label">R$
+          Unitário:</label>
+        <input type="text" name="valorUnitario_input" id="valorUnitario_input"
+          placeholder="Digite o valor unitário do produto">
+
+        <button>Adicionar</button>
+      </form>
+    </section>
+
+  </main>
+  <script src='./calculaTotal.js'></script>
+  <script src='cadastro.js'></script>
+</body>
+
+</html>
